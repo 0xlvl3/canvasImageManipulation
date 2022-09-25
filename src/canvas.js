@@ -5,7 +5,7 @@ const canvas = document.querySelector("canvas");
 const c = canvas.getContext("2d");
 
 const img = document.querySelector("img");
-const radius = 300;
+const radius = 150;
 let isImage = false;
 
 canvas.width = innerWidth;
@@ -26,7 +26,7 @@ function animateDot(dot, canvas) {
   //gsap https://greensock.com/get-started/
   gsap.to(dot, {
     //how fast the pixels move
-    duration: 1.75 + Math.random(),
+    duration: 2.75 + Math.random(),
 
     //creates our random pixel circle
     x,
